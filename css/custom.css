@@ -1,0 +1,22 @@
+/* css/custom.css
+   Small tweaks layered on top of Bootstrap. Keep this file minimal - most
+   styling comes from Bootstrap component classes used directly in the HTML. */
+
+/* Keep all product card images a consistent height regardless of the source
+   image's dimensions. */
+.item-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Small square thumbnail used in the shortlist rows. */
+.shortlist-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+/* Make the user's email in the (dark) navbar easy to read. */
+.navbar-text {
+  color: rgba(255, 255, 255, 0.85);
+}

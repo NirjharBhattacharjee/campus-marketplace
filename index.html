@@ -1,43 +1,101 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome!</title>
-    <link href="/css/styles.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome · Campus Marketplace</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-row ">
-      <div class="container-fluid d-flex flex-row justify-content-between">
-        <a class="navbar-brand" href="index.html">
-          <img src="" alt="welcome" width="30" height="24">
-        </a>
-      
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav d-flex gap-5">
+  <body class="bg-body-tertiary">
+    <!-- Shared navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Campus Marketplace</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+          aria-controls="navMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="marketplace.html">marketplace</a>
+              <a class="nav-link" href="marketplace.html">Marketplace</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="myListing.html">myListing</a>
+              <a class="nav-link" href="myListing.html">My Listings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shortlist.html">shortlist</a>
-            </li>
-            <li class="nav-item">
-              <input class="btn btn-primary " type="submit" value="Submit">
+              <a class="nav-link" href="shortlist.html">Shortlist</a>
             </li>
           </ul>
+          <div class="d-flex align-items-center gap-3">
+            <span class="navbar-text" id="user-email"></span>
+            <button class="btn btn-outline-light signout-btn" type="button">
+              Sign Out
+            </button>
+          </div>
         </div>
       </div>
     </nav>
-    <div >
 
-    <nav class="navbar fixed-bottom bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
+    <!-- Welcome hero -->
+    <main class="container py-5">
+      <div class="p-4 p-md-5 mb-4 rounded-3 bg-body shadow-sm">
+        <h1 class="display-6 fw-bold">Welcome back!</h1>
+        <p class="fs-5 text-secondary mb-0">
+          Signed in as <span class="fw-semibold" id="welcome-email">…</span>
+        </p>
       </div>
-    </nav>
-    <script type="module" src="js/app.js"></script>
+
+      <!-- Navigation cards -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="marketplace.html" class="text-decoration-none">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h5 card-title">Browse Marketplace</h2>
+                <p class="card-text text-secondary">
+                  See what other students are selling or trading.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="myListing.html" class="text-decoration-none">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h5 card-title">My Listings</h2>
+                <p class="card-text text-secondary">
+                  View the items you have listed for sale.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="shortlist.html" class="text-decoration-none">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h5 card-title">My Shortlist</h2>
+                <p class="card-text text-secondary">
+                  Items you have saved to look at later.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/welcome.js"></script>
   </body>
 </html>
