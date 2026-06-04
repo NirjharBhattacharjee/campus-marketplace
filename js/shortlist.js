@@ -1,10 +1,3 @@
-// js/shortlist.js
-// ---------------------------------------------------------------------------
-// My Shortlist page. Lists the items the signed-in user has shortlisted and
-// lets them remove an item (which deletes the matching Firestore document).
-// Shortlist entries live in the `shortlists` collection, one per user+item.
-// ---------------------------------------------------------------------------
-
 import { requireAuth, wireSignOut } from "./auth.js";
 import { db } from "./firebase.js";
 import {

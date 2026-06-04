@@ -1,11 +1,3 @@
-// js/cards.js
-// ---------------------------------------------------------------------------
-// Shared helper for rendering a single item as a Bootstrap card. Used by both
-// the Marketplace and My Listings pages so the card layout stays consistent.
-// Values from Firestore are inserted with textContent (never innerHTML) so a
-// listing's text can never break the page or inject markup.
-// ---------------------------------------------------------------------------
-
 // Light grey "No image" placeholder shown when an item has no/!broken image.
 const PLACEHOLDER_IMAGE =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23e9ecef'/%3E%3Ctext x='50%25' y='50%25' fill='%236c757d' font-family='sans-serif' font-size='20' text-anchor='middle' dominant-baseline='middle'%3ENo image%3C/text%3E%3C/svg%3E";

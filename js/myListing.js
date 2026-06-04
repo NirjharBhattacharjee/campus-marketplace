@@ -1,10 +1,3 @@
-// js/myListing.js
-// ---------------------------------------------------------------------------
-// My Listings page. Shows ONLY the items whose sellerId matches the signed-in
-// user's UID. These cards have no Shortlist button (you can't shortlist your
-// own items).
-// ---------------------------------------------------------------------------
-
 import { requireAuth, wireSignOut } from "./auth.js";
 import { db } from "./firebase.js";
 import { createItemCard } from "./cards.js";

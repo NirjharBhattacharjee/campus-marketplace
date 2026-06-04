@@ -1,10 +1,3 @@
-// js/marketplace.js
-// ---------------------------------------------------------------------------
-// Marketplace page. Shows every item from Firestore EXCEPT the ones listed by
-// the signed-in user, and lets the user shortlist items (saved per user, with
-// duplicate prevention).
-// ---------------------------------------------------------------------------
-
 import { requireAuth, wireSignOut } from "./auth.js";
 import { db } from "./firebase.js";
 import { createItemCard, formatPrice } from "./cards.js";

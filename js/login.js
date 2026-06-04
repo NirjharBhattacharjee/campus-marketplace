@@ -1,9 +1,3 @@
-// js/login.js
-// ---------------------------------------------------------------------------
-// Sign-in page logic. Verifies email/password with Firebase Authentication and
-// redirects to the Welcome page (index.html) on success.
-// ---------------------------------------------------------------------------
-
 import { auth } from "./firebase.js";
 import {
   signInWithEmailAndPassword,

@@ -1,12 +1,3 @@
-// js/auth.js
-// ---------------------------------------------------------------------------
-// Shared authentication helpers used by every protected page.
-//   - requireAuth(onUser): redirect to login.html if signed out, otherwise
-//     hand the signed-in user back to the page.
-//   - wireSignOut(selector): make a Sign Out button sign the user out and
-//     return them to login.html.
-// ---------------------------------------------------------------------------
-
 import { auth } from "./firebase.js";
 import {
   onAuthStateChanged,
